@@ -1,1 +1,1 @@
-# Safety-App
+# Safety-App is a custom application to report safety issues. This Application allows users to log and track safety issues. The Safety app container involves setting the application's Name and Description. During the app container creation, you apply basic Security (roles) as well. Other components of the App include Data, Experience, and Logic and automation.
