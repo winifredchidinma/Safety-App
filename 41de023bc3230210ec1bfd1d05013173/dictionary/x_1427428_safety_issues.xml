@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d1292ebbc3a30210ec1bfd1d0501319d" label="Issues" max_length="40" name="x_1427428_safety_issues" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="working" sequence="2" value="working"/>
+                <element inactive_on_update="false" label="closed" sequence="3" value="closed"/>
+                <element inactive_on_update="false" label="pending" sequence="0" value="pending"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Due date" max_length="40" name="due_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="critical" sequence="0" value="critical"/>
+                <element inactive_on_update="false" label="low" sequence="3" value="low"/>
+                <element inactive_on_update="false" label="high" sequence="1" value="high"/>
+                <element inactive_on_update="false" label="moderate" sequence="2" value="moderate"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Opened by" max_length="32" name="opened_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="69" name="short_description" type="string"/>
+        <element attributes="encode_utf8=false" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="small" sequence="0" value="small"/>
+                <element inactive_on_update="false" label="big" sequence="0" value="big"/>
+                <element inactive_on_update="false" label="medium" sequence="0" value="medium"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+        <index name="index3">
+            <element name="opened_by"/>
+        </index>
+    </element>
+</database>

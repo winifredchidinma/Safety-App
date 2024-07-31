@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="63e12340c33f4210ec1bfd1d0501315d" extends="sys_import_set_row" label="Imp Tmpl Rm Story" max_length="40" name="u_imp_tmpl_rm_story" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Product" label="Product" max_length="32" name="u_product" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Theme" label="Theme" max_length="32" name="u_theme" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="4000" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short description" label="Short description" max_length="160" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Epic" label="Epic" max_length="32" name="u_epic" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Acceptance criteria" label="Acceptance criteria" max_length="4000" name="u_acceptance_criteria" type="string"/>
+    </element>
+</database>
